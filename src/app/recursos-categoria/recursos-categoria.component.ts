@@ -81,7 +81,7 @@ export class RecursosCategoriaComponent {
       console.log("Datos enviados para reserva:", datosFormulario);
 
       this.http
-         .post("http://127.0.0.1:8000/agregarReserva", datosFormulario)
+         .post("https://backend-integraservicios.onrender.com/agregarReserva", datosFormulario)
          .subscribe({
             next: (res) => this.mostrarError("Reserva realizada con éxito!"),
             error: (err) => {
