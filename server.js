@@ -3,11 +3,11 @@ const path = require('path');
 const app = express();
 
 // Serve static files
-app.use(express.static(__dirname + '/dist/Frontend'));
+app.use(express.static(__dirname + '/dist/frontend'));
 
 // Send all requests to index.html
 app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname + '/dist/Frontend/index.html'));
+  res.sendFile(path.join(__dirname + '/dist/frontend/index.html'));
 });
 
 // Usar el puerto de Render (10000) como respaldo
