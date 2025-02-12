@@ -10,9 +10,11 @@ app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname + '/dist/Frontend/index.html'));
 });
 
-// default Render port
-const port = process.env.PORT || 3000;
+// Usar el puerto de Render (10000) como respaldo
+const port = process.env.PORT || 10000;
 
-app.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
+// Especificar explícitamente 0.0.0.0 como host
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Server listening on ${port}`);
+  console.log('Server running on http://0.0.0.0:' + port);
 });
