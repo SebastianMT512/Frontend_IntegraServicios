@@ -9,8 +9,8 @@ import { AdministrarReservasComponent } from "./administrar-reservas/administrar
 import { IntegracionComponent } from "./integracion/integracion.component";
 
 const routes: Routes = [
-   { path: "", component: PaginaPrincipalComponent },
-   { path: "recursos-categoria", component: RecursosCategoriaComponent },
+   { path: "", redirectTo: "pagina-principal", pathMatch: "full" },
+   { path: "pagina-principal", component: PaginaPrincipalComponent },
    { path: "login", component: LoginComponent },
    { path: "administrar-reservas", component: AdministrarReservasComponent },
    { path: "integracion", component: IntegracionComponent },
