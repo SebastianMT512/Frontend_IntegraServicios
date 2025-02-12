@@ -7,7 +7,7 @@ app.use(express.static(__dirname + '/dist/frontend'));
 
 // Send all requests to index.html
 app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname + '/dist/frontend/index.html'));
+  res.sendFile(path.join(__dirname + '/dist/frontend/browser/index.html'));
 });
 
 // Usar el puerto de Render (10000) como respaldo
