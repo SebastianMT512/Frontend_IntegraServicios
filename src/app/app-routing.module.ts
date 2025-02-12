@@ -11,6 +11,7 @@ const routes: Routes = [
    { path: "administrar-reservas", component: AdministrarReservasComponent },
    { path: "integracion", component: IntegracionComponent },
    { path: "recursos-categoria", component: RecursosCategoriaComponent },
+  {path: 'gestion-usuario',component: GestionUsuarioComponent},
    { path: "**", redirectTo: "", pathMatch: "full" }, // Ruta para manejar rutas no encontradas
 ];
 
