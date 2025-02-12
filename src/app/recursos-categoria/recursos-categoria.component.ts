@@ -42,7 +42,7 @@ export class RecursosCategoriaComponent {
    }
 
    obtenerRecursosPorCategoria() {
-      const url = `http://127.0.0.1:8000/consultarRecursos?tipo_recurso=${encodeURIComponent(
+      const url = `https://backend-integraservicios.onrender.com/consultarRecursos?tipo_recurso=${encodeURIComponent(
          this.message
       )}`;
 
