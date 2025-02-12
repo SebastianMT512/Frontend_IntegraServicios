@@ -5,6 +5,7 @@ import { LoginComponent } from "./login/login.component";
 import { AdministrarReservasComponent } from "./administrar-reservas/administrar-reservas.component";
 import { IntegracionComponent } from "./integracion/integracion.component";
 import { RecursosCategoriaComponent } from "./recursos-categoria/recursos-categoria.component";
+import { GestionUsuarioComponent } from "./gestion-usuario/gestion-usuario.component";
 const routes: Routes = [
    { path: "", component: PaginaPrincipalComponent },
    { path: "login", component: LoginComponent },
